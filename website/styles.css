@@ -1,0 +1,450 @@
+html, body {
+  background-color: #b5b2a1;
+  font-family: "Poppins";
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type:none;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+table {
+  width: 90%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  border-collapse: collapse;
+}
+
+tr > td {
+  font-family: "Poppins";
+  font-size: 12pt;
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+}
+
+tr > td > a > button {
+  font-family: "Poppins";
+  font-size: 12pt;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+ tr > td > button {
+   font-family: "Poppins";
+   font-size: 12pt;
+   background-color: rgb(255, 235, 200);
+   color: white;
+   border: none;
+   padding: 10px;
+   border-radius: 10px;
+ }
+
+tr > td > button:hover, #customerdetails > a > button:hover, #food > a > button:hover {
+  color: rgb(155, 153, 153);
+}
+
+tr > td > a > button:hover {
+  color: rgb(255, 235, 200);
+}
+
+.logo {
+  float: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 235, 200);
+  margin-top: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 10px;
+}
+
+.navbar li > a {
+  font-family: "Poppins", sans-serif;
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  margin-top: 13px;
+  text-decoration: none;
+  list-style-type:none;
+}
+
+.navbar a:hover {
+  background-color: #fab46a;
+}
+
+.belt {
+  height: 450px;
+  background: rgb(203, 199, 199);
+  box-sizing: border-box;
+  margin-top: 90px;
+  border-top: 40px solid rgb(203, 199, 199);
+  border-bottom: 40px solid rgb(203, 199, 199);
+  width: 100%;
+}
+
+#scroller1 {
+  background: url("Images/foodbelt.png") repeat-x;
+  width: 100%;
+  height: 270px;
+  position: relative;
+  animation: bg-animation 30s linear infinite;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -840px 0;
+  }
+}
+
+.picture {
+  background-color: white;
+  margin-top: -300px;
+  margin-left: 300px;
+  border-radius: 10px;
+  border: 5px solid rgb(203, 199, 199);
+  position: top;
+}
+
+.edible {
+  background-color: white;
+  margin: 2% 5% 5% 5%;
+  border-radius: 10px;
+  border: 5px solid rgb(255, 235, 200);
+  float: left;
+  position: relative;
+}
+
+.generaltable > button {
+  text-decoration: none;
+  background-color: #333;
+  font-size: 14pt;
+  font-family: "Poppins";
+  color: black;
+  position: relative;
+  padding: 9px;
+  top: 20px;
+  left: 1045px;
+  border-radius: 10px;
+  border: none;
+}
+
+.foodinfo > button {
+  text-decoration: none;
+  background-color: #333;
+  font-size: 14pt;
+  font-family: "Poppins";
+  color: white;
+  position: relative;
+  padding: 10px;
+  top: 20px;
+  left: 1090px;
+  border-radius: 10px;
+  border: none;
+}
+
+#homepage {
+  display: grid;
+  grid-template-columns: repeat(3,1FR);
+  grid-template-rows: 250px;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 30px;
+  padding-bottom: 50px;
+}
+
+#homepage > img {
+  max-width: 100%;
+  border: 5px dashed rgb(255, 235, 200);
+  padding: 15px;
+}
+
+#footer {
+  background-color: rgb(255, 235, 200);
+  color: black;
+  font-family: "Poppins";
+  font-size: 12pt;
+  text-align: center;
+  height: 10%;
+  width: 100%;
+  padding-top: 40px;
+  position: absolute;
+  margin-top: 5%;
+  bottom: 0;
+}
+
+#sign_in {
+  font-family: "Poppins";
+  color: white;
+  font-size: 15pt;
+  padding: 40px 20px 20px 40px;
+  width: 350px;
+  height: 200px;
+  position: center;
+  margin-top: 90px;
+  margin-left: 440px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+#sign_in > form > button, #editform > form > button, #editfood > form > button, #addorder > form > button {
+  font-family: "Poppins";
+  font-size: 14pt;
+  background-color: rgb(255, 235, 200);
+  color: black;
+  top: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  margin: auto;
+  left: 0px;
+  text-decoration: none;
+}
+
+#sign_in > form > button > a, #editform > form > button > a, #editfood > form > button > a, #addorder > form > button > a{
+  text-decoration: none;
+  color: black;
+}
+
+#sign_in > form > button > a:hover, #editform > form > button > a:hover, #editfood > form > button > a:hover, #addorder > form > button > a:hover{
+  color: #333;
+}
+
+#sign_in > form > input, #editform > form > input, #editfood > form > input, #addorder > form > input {
+  font-family: "Poppins";
+  font-size: 12pt;
+  border: none;
+  padding-left: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+#editform > h1, #editfood > h1, #addorder > h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+#customer {
+  display: grid;
+  grid-template-columns: 400px 350px 400px;
+  grid-template-rows: 50%;
+  grid-column-gap: 40px;
+  width: 100%;
+  margin-left: 50px;
+  margin-top: -10px;
+}
+
+#customerdetails > h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+#customerdetails > a > button, #food > a > button {
+  font-family: "Poppins";
+  font-size: 12pt;
+  background-color: rgb(203, 199, 199);
+  color: black;
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#orderhistory > h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  padding: 10px;
+}
+
+#orderhistory > p {
+  font-family: "Poppins";
+  font-size: 14pt;
+  margin-top: -30px;
+  margin-left: 40px;
+}
+
+#customerdetails > p {
+  font-family: "Poppins";
+  font-size: 14pt;
+  text-align: left;
+  position: relative;
+  margin-top: 1em;
+}
+
+#buttontype1 {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 12pt;
+  width: 100px;
+  margin-left: 30px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  border-radius: 10px;
+}
+
+#buttontype2 {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 12pt;
+  width: 100px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 45%;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  border-radius: 10px;
+}
+
+#buttontype3 {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 12pt;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  top: 30%;
+  left: 40%;
+  -ms-transform: translateY(30%);
+  transform: translateY(10%);
+  border-radius: 10px;
+}
+
+#food > p {
+  font-family: "Poppins";
+  font-size: 14pt;
+  text-align: left;
+  position: relative;
+  margin-top: 3.5em;
+}
+
+#tableheader > th {
+  padding-bottom: 20px;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+#order {
+  margin-left: 4.5em;
+  margin-bottom: 4.5em;
+}
+
+#editform {
+  text-align: center;
+  font-family: "Poppins";
+  color: white;
+  font-size: 35px;
+  padding: 40px;
+  width: 30%;
+  height: 570px;
+  position: relative;
+  margin: 100px 100px 100px 100px;
+  left: 25%;
+  background-color: #333;
+  border-radius: 30px;
+}
+
+#editform2 {
+  text-align: center;
+  font-family: "Poppins";
+  color: white;
+  font-size: 25px;
+  padding: 40px;
+  width: 700px;
+  height: 270px;
+  position: relative;
+  margin: 60px 60px 60px 60px;
+  left: 10%;
+  background-color: #333;
+  border-radius: 30px;
+  line-height: 50px;
+}
+
+#editfood {
+  text-align: center;
+  font-family: "Poppins";
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  width: 30%;
+  height: 400px;
+  position: relative;
+  margin: 100px 100px 100px 100px;
+  left: 25%;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+#addorder {
+  text-align: center;
+  font-family: "Poppins";
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  width: 30%;
+  height: 650px;
+  position: relative;
+  margin: 100px 100px 100px 100px;
+  left: 25%;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #333;
+  border-radius: 10px;
+}
